@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Morgan Downs</title>
+<title>WELCOME HOME, KIDDO!!</title>
 <meta charset="utf-8">
 <meta name="viewpoint" content="width=device-width, initial-scale=1">
 
@@ -13,21 +13,82 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    function randomColor () {
+      var red = Math.floor(Math.random() * 256);
+      var green = Math.floor(Math.random() * 256);
+      var blue = Math.floor(Math.random() * 256);
+
+var divtoedit = document.getElementById('pickacolor');
+divtoedit.style.backgroundColor = 'rgb('+red+','+green+','+blue+')';
+
+document.getElementById('colorGenerated').innerHTML = 'rgb('+red+','+green+','+blue+')';
+
+    }
+</script>
+
 </head>
 
 <body>
 <div class="container-fluid">
-<div class=row>
-<div class="col-sm-12">
-About Morgan Downs
-</div>
-</div>
+  <div class=row>
+    <div class="col-sm-12">
+    <span id="title">About Home Skillet</span>
+    </div>
+  </div>
 
-<div class=row>
-<div class="col-sm-12">
-<img id=coverimage src="imgs/coverimage.jpg" alt="feather"
-</div>
-</div>
+  <div class=row>
+    <div class="col-sm-12">
+    <img id=coverimage src="imgs/coverimage.jpg" alt="feather">
+    </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="halfrow">
+      My favorite number: <br/>
+      32
+      </div>
+    </div>
+
+
+    <div class:"col-sm-g-6">
+      <div class="halfrow">
+        My favorite song:
+        <a href="https://www.youtube.com/watch?v=nKcKreZJYfI"> She Loves Control</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+      <div class="col-sm-2 offset-sm-1 color" id="color1">
+      </div>
+      <div class="col-sm-2 col-sm color" id="color2">
+      </div>
+      <div class="col-sm-2 col-sm color" id="color3">
+      </div>
+      <div class="col-sm-2 col-sm color" id="color4">
+      </div>
+      <div class="col-sm-2 col-sm color" id="color5">
+      </div>
+
+  </div>
+
+  <div class= "row">
+    <div class+"col-sm-12" id="pickacolor">
+      <buttin class="btn btn-default" onclick=randomColor()>
+        Get a Random Color Here!
+      </button>
+      <br/><br/>
+      <p id="colorGenerated"></p>
+    </div>
+  </div>
+
+
+
 </div>
 </body>
 </html>
