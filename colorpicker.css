@@ -3,3 +3,45 @@
   height: 90vh;
   object-fit: cover;
 }
+
+#title {
+  font-size: 4em;
+  color: purple;
+  font-family: 'Georgia';
+  font-weight: bold;
+}
+
+.halfrow {
+background-color:#412D3B;
+color:#F7F6FB;
+margin: 40px;
+padding: 20px;
+text-align: center;
+}
+
+.color {
+  height: 25vh;
+  border: 1px dashed black;
+}
+
+#color1 {
+  background-color: #DECEEF
+}
+#color2 {
+  background-color: #F7F6FB
+}
+#color3 {
+  background-color: #412D3B
+}
+#color4 {
+  background-color: #91687E
+}
+#color5 {
+  background-color: #A68FAE
+}
+#pickacolor {
+  height: 60vh;
+  width: 100%;
+  padding-top: 30vh;
+  text-align: center;
+}
